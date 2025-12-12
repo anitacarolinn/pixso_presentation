@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixso & Pixso MCP Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+        <i class="fas fa-language"></i>
+        <span id="langText">EN</span>
+    </button>
+
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="presentation">
+        <!-- Slide 1: Title -->
+        <section class="slide active" data-slide="1">
+            <div class="slide-content title-slide gradient-bg">
+                <div class="title-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h1>Pixso & Pixso MCP</h1>
+                <p class="subtitle" data-en="UI/UX Design Tool Research" data-zh="UI/UX 設計工具研究">UI/UX 設計工具研究</p>
+                <div class="title-badges">
+                    <span class="badge"><i class="fas fa-paint-brush"></i> <span data-en="Design" data-zh="設計">設計</span></span>
+                    <span class="badge"><i class="fas fa-robot"></i> AI</span>
+                    <span class="badge"><i class="fas fa-code"></i> MCP</span>
+                </div>
+                <div class="desktop-notice">
+                    <i class="fas fa-desktop"></i>
+                    <span data-en="Best viewed on desktop for optimal experience" data-zh="建議使用桌面瀏覽以獲得最佳體驗">建議使用桌面瀏覽以獲得最佳體驗</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: What is Pixso -->
+        <section class="slide" data-slide="2">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-question-circle"></i></div>
+                <h2 data-en="What is Pixso?" data-zh="什麼是 Pixso？">什麼是 Pixso？</h2>
+            </div>
+            <div class="slide-body">
+                <div class="info-cards">
+                    <div class="info-card purple">
+                        <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                        <h4 data-en="One-stop Platform" data-zh="一站式平台">一站式平台</h4>
+                        <p data-en="Collaborative UI/UX design platform" data-zh="協作式 UI/UX 設計平台">協作式 UI/UX 設計平台</p>
+                    </div>
+                    <div class="info-card blue">
+                        <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
+                        <h4 data-en="Chinese Alternative" data-zh="中國替代方案">中國替代方案</h4>
+                        <p data-en="Positioned as Figma alternative" data-zh="定位為 Figma 替代品">定位為 Figma 替代品</p>
+                    </div>
+                    <div class="info-card green">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h4 data-en="Real-time Collaboration" data-zh="即時協作">即時協作</h4>
+                        <p data-en="Multi-person collaboration like Figma" data-zh="類似 Figma 的多人協作">類似 Figma 的多人協作</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Core Features -->
+        <section class="slide" data-slide="5">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-cogs"></i></div>
+                <h2 data-en="Core Features" data-zh="核心功能">核心功能</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style">
+                    <div class="column-header blue-header">
+                        <i class="fas fa-tools"></i> <span data-en="Design Tools" data-zh="設計工具">設計工具</span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-check-circle green"></i> <span data-en="Similar tools to Figma" data-zh="與 Figma 相似的工具">與 Figma 相似的工具</span></li>
+                        <li><i class="fas fa-exclamation-circle yellow"></i> <span data-en="Auto-layout (Figma is better)" data-zh="自動佈局（Figma 較優）">自動佈局（Figma 較優）</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header purple-header">
+                        <i class="fas fa-exchange-alt"></i> <span data-en="Collaboration & Handoff" data-zh="協作與交付">協作與交付</span>
+                    </div>
+                    <div class="import-export">
+                        <div class="ie-section">
+                            <span class="ie-label"><i class="fas fa-download green"></i> <span data-en="Import" data-zh="匯入">匯入</span></span>
+                            <div class="file-badges">
+                                <span class="file-badge">.fig</span>
+                                <span class="file-badge">.sketch</span>
+                                <span class="file-badge">.xd</span>
+                                <span class="file-badge">.svg</span>
+                            </div>
+                        </div>
+                        <div class="ie-section">
+                            <span class="ie-label"><i class="fas fa-upload blue"></i> <span data-en="Export" data-zh="匯出">匯出</span></span>
+                            <div class="file-badges">
+                                <span class="file-badge">PNG</span>
+                                <span class="file-badge">JPG</span>
+                                <span class="file-badge">SVG</span>
+                                <span class="file-badge">PDF</span>
+                                <span class="file-badge">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Figma Interface -->
+        <section class="slide" data-slide="3">
+            <div class="slide-header gradient-header figma-header">
+                <div class="header-icon"><i class="fab fa-figma"></i></div>
+                <h2>Figma Interface</h2>
+            </div>
+            <div class="slide-body interface-slide">
+                <div class="interface-container">
+                    <span class="click-hint"><i class="fas fa-search-plus"></i> <span data-en="Click image for full view" data-zh="點擊圖片查看完整畫面">點擊圖片查看完整畫面</span></span>
+                    <img src="images/figma-interface.png" alt="Figma Interface">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Pixso Interface -->
+        <section class="slide" data-slide="4">
+            <div class="slide-header gradient-header pixso-header">
+                <div class="header-icon"><i class="fas fa-palette"></i></div>
+                <h2>Pixso Interface</h2>
+                <div class="similarity-badge"><i class="fas fa-equals"></i> <span data-en="Very Similar!" data-zh="非常相似！">非常相似！</span></div>
+            </div>
+            <div class="slide-body interface-slide">
+                <div class="interface-container">
+                    <span class="click-hint"><i class="fas fa-search-plus"></i> <span data-en="Click image for full view" data-zh="點擊圖片查看完整畫面">點擊圖片查看完整畫面</span></span>
+                    <img src="images/pixso-interface.png" alt="Pixso Interface">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Unique Features -->
+        <section class="slide" data-slide="9">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-star"></i></div>
+                <h2><span data-en="Pixso Unique Features" data-zh="Pixso 獨特功能">Pixso 獨特功能</span> <span class="tag-small" data-en="Figma Doesn't Have" data-zh="Figma 沒有的">Figma 沒有的</span></h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style">
+                    <div class="column-header green-header">
+                        <i class="fas fa-gem"></i> <span data-en="Unique Advantages (Free Account)" data-zh="獨特優勢（免費帳號）">獨特優勢（免費帳號）</span>
+                    </div>
+                    <ul class="icon-list compact">
+                        <li><i class="fas fa-plane green"></i> <strong data-en="Offline mode" data-zh="離線模式">離線模式</strong>：<span data-en="works without internet" data-zh="無需網路即可使用">無需網路即可使用</span></li>
+                        <li><i class="fas fa-code green"></i> <strong data-en="Free Dev Mode" data-zh="免費開發者模式">免費開發者模式</strong>：<span data-en="inspect & export code (Figma charges $25/mo)" data-zh="檢視與匯出程式碼（Figma 收 $25/月）">檢視與匯出程式碼（Figma 收 $25/月）</span></li>
+                        <li><i class="fas fa-infinity green"></i> <strong data-en="Unlimited files" data-zh="無限檔案">無限檔案</strong>：<span data-en="free personal projects" data-zh="免費個人專案">免費個人專案</span></li>
+                        <li><i class="fas fa-building green"></i> <strong data-en="Private deployment" data-zh="私有部署">私有部署</strong>：<span data-en="enterprise option" data-zh="企業選項">企業選項</span></li>
+                        <li><i class="fas fa-language green"></i> <strong data-en="Multi-language" data-zh="多語言支援">多語言支援</strong>：<span data-en="Simplified Chinese (简体中文) available as language option" data-zh="簡體中文（简体中文）可選擇">簡體中文（简体中文）可選擇</span></li>
+                        <li><i class="fas fa-file-pdf green"></i> <strong data-en="Better PDF export" data-zh="更好的 PDF 匯出">更好的 PDF 匯出</strong>：600KB vs Figma 60MB</li>
+                    </ul>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header cyan-header">
+                        <i class="fas fa-robot"></i> <span data-en="Basic AI (Token System)" data-zh="基礎 AI（代幣制）">基礎 AI（代幣制）</span>
+                    </div>
+                    <ul class="icon-list compact">
+                        <li><i class="fas fa-image cyan"></i> <strong>Text-to-Image</strong>：<span data-en="Generate images from text prompts" data-zh="從文字提示生成圖片">從文字提示生成圖片</span></li>
+                        <li><i class="fas fa-lightbulb cyan"></i> <strong>AI Inspiration</strong>：<span data-en="Get design ideas & suggestions" data-zh="獲取設計靈感與建議">獲取設計靈感與建議</span></li>
+                        <li><i class="fas fa-edit cyan"></i> <strong>Image Editing</strong>：<span data-en="Remove background, boost resolution" data-zh="移除背景、提升解析度">移除背景、提升解析度</span></li>
+                        <li><i class="fas fa-swatchbook cyan"></i> <strong>Design Guidelines</strong>：<span data-en="Auto-generate style guides" data-zh="自動生成風格指南">自動生成風格指南</span></li>
+                        <li><i class="fas fa-clipboard-check cyan"></i> <strong>Element Checklist</strong>：<span data-en="Review design completeness" data-zh="檢查設計完整性">檢查設計完整性</span></li>
+                    </ul>
+                    <div class="limit-info">
+                        <span><i class="fas fa-microchip"></i> <span data-en="Powered by GPT-4" data-zh="使用 GPT-4">使用 GPT-4</span></span>
+                    </div>
+                    <div class="limit-info warning">
+                        <span><i class="fas fa-coins orange"></i> <span data-en="Limited tokens (500 initial)" data-zh="代幣有限（初始 500 tokens）">代幣有限（初始 500 tokens）</span></span>
+                    </div>
+                    <div class="limit-info danger">
+                        <span><i class="fas fa-ban red"></i> <span data-en="No way to buy more yet! (Coming soon™)" data-zh="目前無法購買更多！（即將推出™）">目前無法購買更多！（即將推出™）</span></span>
+                    </div>
+                    <div class="limit-info danger">
+                        <span><i class="fas fa-external-link-alt red"></i> <span data-en="AI-Generated Design → Pixso AI (separate!)" data-zh="AI-Generated Design → Pixso AI（獨立！）">AI-Generated Design → Pixso AI（獨立！）</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Pixso.net AI Screenshots -->
+        <section class="slide" data-slide="14">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-images"></i></div>
+                <h2 data-en="Pixso.net Basic AI - Screenshots" data-zh="Pixso.net 基礎 AI - 截圖">Pixso.net 基礎 AI - 截圖</h2>
+            </div>
+            <div class="slide-body">
+                <div class="screenshot-grid">
+                    <div class="screenshot-item">
+                        <img src="images/pixso-net-ai.png" alt="AI Menu">
+                        <div class="screenshot-desc">
+                            <strong data-en="AI Menu" data-zh="AI 選單">AI 選單</strong>
+                            <p data-en="Main menu with 6 AI features. Token counter at top right." data-zh="主選單有 6 個 AI 功能。右上角顯示代幣數量。">主選單有 6 個 AI 功能。右上角顯示代幣數量。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/pixso-net-t2i.png" alt="Text-to-Image">
+                        <div class="screenshot-desc">
+                            <strong>Text-to-Image</strong>
+                            <p data-en="Generate images from text prompts. Each generation costs tokens." data-zh="從文字提示生成圖片。每次生成消耗代幣。">從文字提示生成圖片。每次生成消耗代幣。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/pixso-net-aigeneration.png" alt="AI Inspiration">
+                        <div class="screenshot-desc">
+                            <strong>AI Inspiration</strong>
+                            <p data-en="Get design suggestions & ideas. Uses GPT-4 for responses." data-zh="獲取設計建議與靈感。使用 GPT-4 回應。">獲取設計建議與靈感。使用 GPT-4 回應。</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/pixso-net-designguidelines.png" alt="Design Guidelines">
+                        <div class="screenshot-desc">
+                            <strong>Design Guidelines</strong>
+                            <p data-en="Auto-generate color palettes & style guides. Note: -36 tokens (negative!)" data-zh="自動生成色彩與風格指南。注意：-36 代幣（負數！）">自動生成色彩與風格指南。注意：-36 代幣（負數！）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Pixso.net AI Screenshots 2 -->
+        <section class="slide" data-slide="15">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-images"></i></div>
+                <h2 data-en="Pixso.net Basic AI - More Screenshots" data-zh="Pixso.net 基礎 AI - 更多截圖">Pixso.net 基礎 AI - 更多截圖</h2>
+            </div>
+            <div class="slide-body">
+                <div class="screenshot-grid three-col">
+                    <div class="screenshot-item vertical">
+                        <img src="images/pixso-net-imageediting-1.png" alt="Remove Background">
+                        <div class="screenshot-desc">
+                            <strong>Remove Background</strong>
+                            <p data-en="⚠️ Result is WHITE background, NOT transparent PNG!" data-zh="⚠️ 結果是白色背景，不是透明 PNG！">⚠️ 結果是白色背景，不是透明 PNG！</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item vertical">
+                        <img src="images/pixso-net-imageediting-2.png" alt="Boost Resolution">
+                        <div class="screenshot-desc">
+                            <strong>Boost Resolution</strong>
+                            <p data-en="Enhance image quality & resolution" data-zh="提升圖片品質與解析度">提升圖片品質與解析度</p>
+                        </div>
+                    </div>
+                    <div class="screenshot-item vertical">
+                        <img src="images/pixso-net-designelement.png" alt="Design Element Checklist">
+                        <div class="screenshot-desc">
+                            <strong>Design Element Checklist</strong>
+                            <p data-en="AI-generated checklist for design review" data-zh="AI 生成的設計檢查清單">AI 生成的設計檢查清單</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: File Import Figma to Pixso -->
+        <section class="slide" data-slide="6">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-file-import"></i></div>
+                <h2 data-en="File Import" data-zh="檔案匯入">檔案匯入</h2>
+            </div>
+            <div class="slide-body">
+                <div class="import-result success">
+                    <div class="result-header">
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="from">Figma</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        <span class="to">Pixso</span>
+                        <span class="status-badge success"><i class="fas fa-check"></i> <span data-en="100% Identical" data-zh="100% 相同">100% 相同</span></span>
+                    </div>
+                    <div class="result-image">
+                        <img src="images/figma-to-pixso.png" alt="Figma to Pixso import result">
+                    </div>
+                    <div class="result-details">
+                        <div class="detail-item"><i class="fas fa-check-circle green"></i> <span data-en="UI 100% same" data-zh="UI 100% 相同">UI 100% 相同</span></div>
+                        <div class="detail-item"><i class="fas fa-check-circle green"></i> <span data-en="UX preserved" data-zh="UX 完整保留">UX 完整保留</span></div>
+                        <div class="detail-item"><i class="fas fa-bolt yellow"></i> <span data-en="Fast import" data-zh="快速匯入">快速匯入</span></div>
+                        <div class="detail-item"><i class="fas fa-shield-alt green"></i> <span data-en="Stable results" data-zh="結果穩定">結果穩定</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: File Import Pixso to Figma -->
+        <section class="slide" data-slide="7">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-file-export"></i></div>
+                <h2 data-en="File Import" data-zh="檔案匯入">檔案匯入</h2>
+            </div>
+            <div class="slide-body">
+                <div class="import-result danger">
+                    <div class="result-header">
+                        <span class="from">Pixso</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        <span class="to">Figma</span>
+                        <span class="status-badge danger"><i class="fas fa-times"></i> <span data-en="Not Recommended" data-zh="不建議">不建議</span></span>
+                    </div>
+                    <div class="result-image">
+                        <img src="images/pixso-to-figma.png" alt="Pixso to Figma import result">
+                    </div>
+                    <div class="result-details warning">
+                        <div class="detail-item"><i class="fas fa-times-circle red"></i> <span data-en="UI is different" data-zh="UI 有差異">UI 有差異</span></div>
+                        <div class="detail-item"><i class="fas fa-times-circle red"></i> <span data-en="UX completely missing" data-zh="UX 完全遺失">UX 完全遺失</span></div>
+                        <div class="detail-item"><i class="fas fa-lightbulb yellow"></i> <span data-en="Export as .sketch from Pixso, then import to Figma" data-zh="從 Pixso 匯出 .sketch 檔案，再匯入 Figma">從 Pixso 匯出 .sketch 檔案，再匯入 Figma</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: User Experience Results -->
+        <section class="slide" data-slide="8">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h2 data-en="User Experience Results" data-zh="使用體驗結果">使用體驗結果</h2>
+            </div>
+            <div class="slide-body">
+                <div class="experience-cards">
+                    <div class="exp-card yellow-border">
+                        <div class="exp-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <h4 data-en="Limited Plugins" data-zh="外掛有限">外掛有限</h4>
+                        <p data-en="Plugin ecosystem is smaller than Figma" data-zh="外掛生態系統比 Figma 小">外掛生態系統比 Figma 小</p>
+                    </div>
+                    <div class="exp-card orange-border">
+                        <div class="exp-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h4 data-en="Pen Tool Difference" data-zh="鋼筆工具差異">鋼筆工具差異</h4>
+                        <p data-en="Slightly different from Figma, needs adjustment" data-zh="與 Figma 略有不同，需要適應">與 Figma 略有不同，需要適應</p>
+                    </div>
+                    <div class="exp-card red-border">
+                        <div class="exp-icon"><i class="fas fa-user-lock"></i></div>
+                        <h4 data-en="Single Account Login" data-zh="單一帳號登入">單一帳號登入</h4>
+                        <p data-en="Only one account per device at a time" data-zh="每台設備同時只能登入一個帳號">每台設備同時只能登入一個帳號</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: AI Pricing Warning -->
+        <section class="slide warning-slide" data-slide="10">
+            <div class="slide-content title-slide warning-bg">
+                <div class="title-icon warning-icon pulse">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h1 data-en="Important: AI Pricing Structure" data-zh="重要：AI 定價結構">重要：AI 定價結構</h1>
+                <p class="subtitle" data-en="What's included in each AI product?" data-zh="各 AI 產品包含什麼功能？">各 AI 產品包含什麼功能？</p>
+            </div>
+        </section>
+
+        <!-- Slide 13: Three Pricing Systems -->
+        <section class="slide compact-slide" data-slide="11">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-dollar-sign"></i></div>
+                <h2 data-en="Three Separate Pricing Systems!" data-zh="三個獨立的收費系統！">三個獨立的收費系統！</h2>
+            </div>
+            <div class="slide-body three-column">
+                <div class="column card-style">
+                    <div class="column-header blue-header">
+                        <i class="fas fa-palette"></i> Pixso Design
+                        <span class="header-subtitle">pixso.net</span>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="price-item"><span class="plan">Starter</span><span class="price free" data-en="Free" data-zh="免費">免費</span></div>
+                        <div class="price-item"><span class="plan">Pro</span><span class="price">$4-7/<span data-en="mo" data-zh="月">月</span></span></div>
+                        <div class="price-item"><span class="plan">Enterprise</span><span class="price">$15-18/<span data-en="mo" data-zh="月">月</span></span></div>
+                    </div>
+                    <div class="included-tag"><i class="fas fa-check-circle"></i> <span data-en="Design tools + Basic AI access" data-zh="設計工具 + 基礎 AI 權限">設計工具 + 基礎 AI 權限</span></div>
+                </div>
+                <div class="column card-style highlight-card">
+                    <div class="column-header orange-header">
+                        <i class="fas fa-coins"></i> AI Tokens
+                        <span class="header-subtitle">pixso.net</span>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="price-item"><span class="plan" data-en="Initial" data-zh="初始">初始</span><span class="price free">500 tokens</span></div>
+                        <div class="price-item"><span class="plan" data-en="Refill" data-zh="補充">補充</span><span class="price danger-text">—</span></div>
+                    </div>
+                    <div class="warning-tag danger"><i class="fas fa-ban"></i> <span data-en="No purchase option!" data-zh="無法購買！">無法購買！</span></div>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header purple-header">
+                        <i class="fas fa-wand-magic-sparkles"></i> Pixso AI
+                        <span class="header-subtitle">pixso.ai</span>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="price-item"><span class="plan free-plan"><i class="fas fa-gift"></i> Free</span><span class="price free">100/<span data-en="mo" data-zh="月">月</span></span></div>
+                        <div class="price-item"><span class="plan">5K</span><span class="price">$25/<span data-en="mo" data-zh="月">月</span></span></div>
+                        <div class="price-item"><span class="plan">10K</span><span class="price">$45/<span data-en="mo" data-zh="月">月</span></span></div>
+                        <div class="price-item"><span class="plan">20K</span><span class="price">$85/<span data-en="mo" data-zh="月">月</span></span></div>
+                    </div>
+                    <div class="warning-tag"><i class="fas fa-exclamation-triangle"></i> <span data-en="Completely separate product!" data-zh="完全獨立的產品！">完全獨立的產品！</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: Pixso.net Plan Benefits -->
+        <section class="slide compact-slide" data-slide="12">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-crown"></i></div>
+                <h2 data-en="Pixso.net Plan Benefits" data-zh="Pixso.net 方案權益">Pixso.net 方案權益</h2>
+            </div>
+            <div class="slide-body three-column">
+                <div class="column card-style">
+                    <div class="column-header gray-header">
+                        <i class="fas fa-user"></i> Starter (<span data-en="Free" data-zh="免費">免費</span>)
+                    </div>
+                    <ul class="icon-list compact">
+                        <li><i class="fas fa-check green"></i> <span data-en="Unlimited personal files" data-zh="無限個人檔案">無限個人檔案</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="3 team project pages" data-zh="3 個團隊專案頁面">3 個團隊專案頁面</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="30 days version history" data-zh="30 天版本歷史">30 天版本歷史</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Basic AI access" data-zh="基礎 AI 權限">基礎 AI 權限</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Free Dev Mode" data-zh="免費開發者模式">免費開發者模式</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header blue-header">
+                        <i class="fas fa-star"></i> Pro ($4-7/<span data-en="mo" data-zh="月">月</span>)
+                    </div>
+                    <ul class="icon-list compact">
+                        <li><i class="fas fa-check green"></i> <span data-en="Everything in Starter" data-zh="Starter 所有功能">Starter 所有功能</span></li>
+                        <li><i class="fas fa-plus blue"></i> <span data-en="Unlimited team projects" data-zh="無限團隊專案">無限團隊專案</span></li>
+                        <li><i class="fas fa-plus blue"></i> <span data-en="Unlimited version history" data-zh="無限版本歷史">無限版本歷史</span></li>
+                        <li><i class="fas fa-plus blue"></i> <span data-en="Advanced collaboration" data-zh="進階協作功能">進階協作功能</span></li>
+                        <li><i class="fas fa-plus blue"></i> <span data-en="More AI tokens" data-zh="更多 AI 代幣">更多 AI 代幣</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style highlight-card">
+                    <div class="column-header purple-header">
+                        <i class="fas fa-building"></i> Enterprise ($15-18/<span data-en="mo" data-zh="月">月</span>)
+                    </div>
+                    <ul class="icon-list compact">
+                        <li><i class="fas fa-check green"></i> <span data-en="Everything in Pro" data-zh="Pro 所有功能">Pro 所有功能</span></li>
+                        <li><i class="fas fa-plus purple"></i> <span data-en="Granular access controls" data-zh="精細權限控制">精細權限控制</span></li>
+                        <li><i class="fas fa-plus purple"></i> <span data-en="Local data storage options" data-zh="本地資料儲存選項">本地資料儲存選項</span></li>
+                        <li><i class="fas fa-plus purple"></i> <span data-en="Audit trails" data-zh="審計追蹤">審計追蹤</span></li>
+                        <li><i class="fas fa-plus purple"></i> <span data-en="Private deployment" data-zh="私有部署">私有部署</span></li>
+                    </ul>
+                    <div class="info-tag"><i class="fas fa-info-circle"></i> <span data-en="10+ members: Contact sales" data-zh="10人以上：聯繫銷售">10人以上：聯繫銷售</span></div>
+                </div>
+            </div>
+            <div class="conclusion-box danger" style="font-size: 0.9rem; padding: 12px 20px;">
+                <i class="fas fa-ban"></i>
+                <span data-en="AI tokens LIMITED (500), NO purchase option yet!" data-zh="AI 代幣有限（500），尚無購買選項！">AI 代幣有限（500），尚無購買選項！</span>
+            </div>
+        </section>
+
+        <!-- Slide 13: AI Tokens vs Pixso AI -->
+        <section class="slide" data-slide="13">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-coins"></i></div>
+                <h2 data-en="AI Tokens vs Pixso AI" data-zh="AI Tokens vs Pixso AI">AI Tokens vs Pixso AI</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style highlight-card">
+                    <div class="column-header orange-header">
+                        <i class="fas fa-coins"></i> AI Tokens
+                        <span class="header-subtitle">pixso.net · 500 tokens <span data-en="initial" data-zh="初始">初始</span></span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-image orange"></i> <strong>Text-to-Image</strong>：<span data-en="Generate images from text" data-zh="從文字提示生成圖片">從文字提示生成圖片</span></li>
+                        <li><i class="fas fa-lightbulb orange"></i> <strong>AI Inspiration</strong>：<span data-en="Get design ideas & suggestions" data-zh="獲取設計靈感與建議">獲取設計靈感與建議</span></li>
+                        <li><i class="fas fa-magic orange"></i> <strong>Image Editing</strong>：<span data-en="Remove background, boost resolution" data-zh="移除背景、提升解析度">移除背景、提升解析度</span></li>
+                        <li><i class="fas fa-swatchbook orange"></i> <strong>Design Guidelines</strong>：<span data-en="Auto-generate style guide" data-zh="自動生成風格指南">自動生成風格指南</span></li>
+                        <li><i class="fas fa-clipboard-check orange"></i> <strong>Element Checklist</strong>：<span data-en="Check design completeness" data-zh="檢查設計完整性">檢查設計完整性</span></li>
+                    </ul>
+                    <div class="warning-tag danger"><i class="fas fa-ban"></i> <span data-en="No refill option!" data-zh="無法補充！">無法補充！</span></div>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header purple-header">
+                        <i class="fas fa-wand-magic-sparkles"></i> Pixso AI
+                        <span class="header-subtitle">pixso.ai · $25-85/<span data-en="mo" data-zh="月">月</span></span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-keyboard purple"></i> <strong>Text-to-UI</strong>：<span data-en="Generate UI from text" data-zh="文字轉 UI 設計">文字轉 UI 設計</span></li>
+                        <li><i class="fas fa-file-code purple"></i> <strong>Generate Pages</strong>：<span data-en="Create full page designs" data-zh="生成完整頁面設計">生成完整頁面設計</span></li>
+                        <li><i class="fas fa-mobile-alt purple"></i> <strong>Responsive</strong>：<span data-en="Auto-adapt to screen sizes" data-zh="自動適配螢幕尺寸">自動適配螢幕尺寸</span></li>
+                        <li><i class="fas fa-code purple"></i> <strong>Code Output</strong>：<span data-en="Export to HTML/CSS/React" data-zh="匯出 HTML/CSS/React">匯出 HTML/CSS/React</span></li>
+                    </ul>
+                    <div class="warning-tag"><i class="fas fa-exclamation-triangle"></i> <span data-en="Separate subscription!" data-zh="獨立訂閱！">獨立訂閱！</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 19: AI Design Options -->
+        <section class="slide" data-slide="19">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-route"></i></div>
+                <h2 data-en="AI Design Generation Options" data-zh="AI 設計生成選項">AI 設計生成選項</h2>
+            </div>
+            <div class="slide-body">
+                <div class="options-grid">
+                    <div class="option-card">
+                        <div class="option-num">1</div>
+                        <h4><i class="fab fa-figma"></i> Figma + Figma Make</h4>
+                        <p data-en="AI credits included ($16/mo Full Seat)" data-zh="AI 點數包含（$16/月 Full Seat）">AI 點數包含（$16/月 Full Seat）</p>
+                        <p class="option-note" data-en="Paid: ~3k credits/mo, Free: limited" data-zh="付費：約 3k 點數/月，免費版：有限">付費：約 3k 點數/月，免費版：有限</p>
+                    </div>
+                    <div class="option-card recommended">
+                        <div class="option-num star"><i class="fas fa-star"></i></div>
+                        <h4><i class="fab fa-figma"></i> Figma + Google Stitch</h4>
+                        <p data-en="Use Gemini to generate UI (FREE)" data-zh="使用 Gemini 生成 UI（免費）">使用 Gemini 生成 UI（免費）</p>
+                        <p class="option-note" data-en="Use 'Copy to Figma' feature to transfer design" data-zh="使用「Copy to Figma」功能轉移設計">使用「Copy to Figma」功能轉移設計</p>
+                        <span class="rec-badge" data-en="Recommended" data-zh="推薦">推薦</span>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-num">3</div>
+                        <h4><i class="fas fa-palette"></i> Pixso + Pixso AI</h4>
+                        <p class="option-note" data-en="Pixso Design: Free or $4-7/mo (Pro)" data-zh="Pixso Design：免費 或 $4-7/月（Pro）">Pixso Design：免費 或 $4-7/月（Pro）</p>
+                        <p class="option-note" data-en="Pixso AI: $25-85/mo (separate)" data-zh="Pixso AI：$25-85/月（獨立訂閱）">Pixso AI：$25-85/月（獨立訂閱）</p>
+                        <p class="option-note warning-text" data-en="Total: $25-92/mo" data-zh="總計：$25-92/月">總計：$25-92/月</p>
+                    </div>
+                </div>
+                <div class="transfer-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-en="Pixso + Google Stitch: Generate in Stitch → Export to Figma → Download .fig → Import to Pixso (no direct transfer)" data-zh="Pixso + Google Stitch：在 Stitch 生成 → 匯出到 Figma → 下載 .fig → 匯入 Pixso（無法直接轉移）">Pixso + Google Stitch：在 Stitch 生成 → 匯出到 Figma → 下載 .fig → 匯入 Pixso（無法直接轉移）</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 16: Pixso AI Demo Section -->
+        <section class="slide section-divider" data-slide="16">
+            <div class="slide-content title-slide pixso-ai-gradient">
+                <div class="title-icon">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+                <h1>Pixso AI Demo</h1>
+                <p class="subtitle" data-en="Text-to-Design & Picture-to-Design" data-zh="文字轉設計 & 圖片轉設計">文字轉設計 & 圖片轉設計</p>
+                <div class="title-badges">
+                    <span class="badge"><i class="fas fa-keyboard"></i> <span data-en="Text Prompt" data-zh="文字提示">文字提示</span></span>
+                    <span class="badge"><i class="fas fa-pencil"></i> <span data-en="Sketch Input" data-zh="草圖輸入">草圖輸入</span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 17: Pixso AI Demo Text-to-Design -->
+        <section class="slide" data-slide="17">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <h2 data-en="Pixso AI Demo: Text-to-Design + Code" data-zh="Pixso AI 示範：文字轉設計 + 程式碼">Pixso AI 示範：文字轉設計 + 程式碼</h2>
+                <div class="credit-badge"><i class="fas fa-coins"></i> -50 <span data-en="credits" data-zh="點數">點數</span></div>
+            </div>
+            <div class="slide-body">
+                <div class="demo-showcase">
+                    <div class="demo-header">
+                        <span class="demo-badge"><i class="fas fa-magic"></i> <span data-en="My Result" data-zh="我的成果">我的成果</span></span>
+                        <h3 data-en="Tzu Chi 60th Anniversary Mobile App" data-zh="慈濟 60 週年行動應用程式">慈濟 60 週年行動應用程式</h3>
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-image">
+                            <img src="images/pixso-ai-result.png" alt="Pixso AI Demo Result">
+                        </div>
+                        <div class="demo-actions">
+                            <a href="https://pixso.ai/app/design?session_id=mv2zyw01000dew10fvieic3890v96s1d" target="_blank" class="demo-btn pixso-btn">
+                                <i class="fas fa-external-link-alt"></i> <span data-en="View in Pixso AI" data-zh="在 Pixso AI 中查看">在 Pixso AI 中查看</span>
+                            </a>
+                            <a href="demo/tzuchi-60th.html" target="_blank" class="demo-btn live-btn">
+                                <i class="fas fa-play-circle"></i> <span data-en="View Live Demo" data-zh="查看即時示範">查看即時示範</span>
+                            </a>
+                        </div>
+                        <div class="demo-features">
+                            <div class="demo-feature">
+                                <i class="fas fa-keyboard cyan"></i>
+                                <span data-en="Generated from text prompt" data-zh="從文字提示生成">從文字提示生成</span>
+                            </div>
+                            <div class="demo-feature">
+                                <i class="fas fa-mobile-alt green"></i>
+                                <span data-en="Mobile-first design" data-zh="行動優先設計">行動優先設計</span>
+                            </div>
+                            <div class="demo-feature">
+                                <i class="fas fa-code purple"></i>
+                                <span data-en="Exports to HTML/CSS" data-zh="匯出為 HTML/CSS">匯出為 HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 18: Pixso AI Picture to Design Demo -->
+        <section class="slide" data-slide="18">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-pencil-alt"></i></div>
+                <h2 data-en="Pixso AI Demo: Picture to Design + Code" data-zh="Pixso AI 示範：圖片轉設計 + 程式碼">Pixso AI 示範：圖片轉設計 + 程式碼</h2>
+                <div class="credit-badge"><i class="fas fa-coins"></i> -50 <span data-en="credits" data-zh="點數">點數</span></div>
+            </div>
+            <div class="slide-body">
+                <div class="demo-showcase">
+                    <div class="demo-header">
+                        <span class="demo-badge draw-badge"><i class="fas fa-pencil"></i> <span data-en="My Drawing → Design" data-zh="我的草圖 → 設計">我的草圖 → 設計</span></span>
+                        <h3 data-en="Tzu Chi 60th Anniversary - From Sketch" data-zh="慈濟 60 週年 - 從草圖生成">慈濟 60 週年 - 從草圖生成</h3>
+                    </div>
+                    <div class="demo-content-draw">
+                        <div class="demo-comparison">
+                            <div class="demo-before">
+                                <div class="demo-label"><i class="fas fa-pencil"></i> <span data-en="My Drawing" data-zh="我的草圖">我的草圖</span></div>
+                                <img src="images/design.jpg" alt="My Drawing">
+                            </div>
+                            <div class="demo-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="demo-after">
+                                <div class="demo-label"><i class="fas fa-magic"></i> <span data-en="AI Result" data-zh="AI 結果">AI 結果</span></div>
+                                <img src="images/pixso-ai-draw-result.png" alt="Pixso AI Result">
+                            </div>
+                        </div>
+                        <div class="demo-actions-row">
+                            <a href="https://pixso.ai/api/pixai/design/html?key=pixsoAI/mv2zyw01000dew45fhzuxhf970ltg2oj/0_tzuchi_60th_design.html" target="_blank" class="demo-btn pixso-btn">
+                                <i class="fas fa-external-link-alt"></i> <span data-en="View in Pixso AI" data-zh="在 Pixso AI 中查看">在 Pixso AI 中查看</span>
+                            </a>
+                            <a href="demo/tzuchi-60th-draw.html" target="_blank" class="demo-btn live-btn">
+                                <i class="fas fa-play-circle"></i> <span data-en="View Live Demo" data-zh="查看即時示範">查看即時示範</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 20: Pixso MCP Section -->
+        <section class="slide section-divider" data-slide="20">
+            <div class="slide-content title-slide mcp-gradient">
+                <div class="title-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h1>Pixso MCP</h1>
+                <p class="subtitle" data-en="Model Context Protocol Integration" data-zh="模型上下文協議整合">模型上下文協議整合</p>
+                <div class="title-badges">
+                    <span class="badge"><i class="fas fa-code"></i> <span data-en="Code Gen" data-zh="程式碼生成">程式碼生成</span></span>
+                    <span class="badge"><i class="fas fa-sync"></i> D2C / C2D</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 21: What is Pixso MCP -->
+        <section class="slide" data-slide="21">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-info-circle"></i></div>
+                <h2 data-en="What is Pixso MCP?" data-zh="什麼是 Pixso MCP？">什麼是 Pixso MCP？</h2>
+            </div>
+            <div class="slide-body">
+                <div class="mcp-intro">
+                    <div class="mcp-diagram">
+                        <div class="mcp-box design"><i class="fas fa-palette"></i><span>Pixso Design</span></div>
+                        <div class="mcp-arrow"><i class="fas fa-arrows-alt-h"></i></div>
+                        <div class="mcp-box mcp"><i class="fas fa-plug"></i><span>MCP Protocol</span></div>
+                        <div class="mcp-arrow"><i class="fas fa-arrows-alt-h"></i></div>
+                        <div class="mcp-box code"><i class="fas fa-code"></i><span data-en="AI Code Assistant" data-zh="AI 程式碼助手">AI 程式碼助手</span></div>
+                    </div>
+                    <div class="mcp-features">
+                        <div class="mcp-feature">
+                            <i class="fas fa-certificate cyan"></i>
+                            <div>
+                                <strong>MCP = Model Context Protocol</strong>
+                                <p data-en="Open standard by Anthropic" data-zh="Anthropic 開放標準">Anthropic 開放標準</p>
+                            </div>
+                        </div>
+                        <div class="mcp-feature">
+                            <i class="fas fa-link green"></i>
+                            <div>
+                                <strong data-en="Connect Design to AI" data-zh="連接設計與 AI">連接設計與 AI</strong>
+                                <p data-en="Bridge design tools with AI assistants" data-zh="橋接設計工具與 AI 助手">橋接設計工具與 AI 助手</p>
+                            </div>
+                        </div>
+                        <div class="mcp-feature">
+                            <i class="fas fa-laptop-code purple"></i>
+                            <div>
+                                <strong data-en="IDE Integration" data-zh="IDE 整合">IDE 整合</strong>
+                                <p data-en="Cursor, VS Code, Claude & more" data-zh="Cursor、VS Code、Claude 等">Cursor、VS Code、Claude 等</p>
+                            </div>
+                        </div>
+                        <div class="mcp-feature">
+                            <i class="fas fa-magic yellow"></i>
+                            <div>
+                                <strong data-en="Precise Code Generation" data-zh="精確程式碼生成">精確程式碼生成</strong>
+                                <p data-en="AI understands your design" data-zh="AI 理解您的設計">AI 理解您的設計</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 22: MCP Guidelines -->
+        <section class="slide" data-slide="22">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-book"></i></div>
+                <h2 data-en="MCP Setup Guidelines" data-zh="MCP 設定指南">MCP 設定指南</h2>
+            </div>
+            <div class="slide-body">
+                <div class="guidelines-image">
+                    <img src="images/guidelines.png" alt="MCP Guidelines">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 23: Step 1 -->
+        <section class="slide" data-slide="23">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 1" data-zh="步驟 1">步驟 1</div>
+                <h2 data-en="Download Pixso Client" data-zh="下載 Pixso 客戶端">下載 Pixso 客戶端</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step1.png" alt="Step 1: Download Pixso">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-download"></i> <span data-en="Download Pixso desktop client" data-zh="下載 Pixso 桌面客戶端">下載 Pixso 桌面客戶端</span></div>
+                        <div class="instruction"><i class="fas fa-desktop"></i> <span data-en="Available for Windows & Mac" data-zh="支援 Windows 和 Mac">支援 Windows 和 Mac</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 24: Step 2 -->
+        <section class="slide" data-slide="24">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 2" data-zh="步驟 2">步驟 2</div>
+                <h2 data-en="Start Local MCP Server" data-zh="啟動本地 MCP 伺服器">啟動本地 MCP 伺服器</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step2.png" alt="Step 2: Start MCP Server">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-server"></i> <span data-en="Open local Pixso MCP server" data-zh="開啟本地 Pixso MCP 伺服器">開啟本地 Pixso MCP 伺服器</span></div>
+                        <div class="instruction"><i class="fas fa-play-circle"></i> <span data-en="Server runs on localhost" data-zh="伺服器在 localhost 上運行">伺服器在 localhost 上運行</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 25: Step 3 -->
+        <section class="slide" data-slide="25">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 3" data-zh="步驟 3">步驟 3</div>
+                <h2 data-en="Configure MCP Client (Claude)" data-zh="配置 MCP 客戶端（Claude）">配置 MCP 客戶端（Claude）</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step3.png" alt="Step 3: Configure Claude">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-cog"></i> <span data-en="Configure your MCP client" data-zh="配置您的 MCP 客戶端">配置您的 MCP 客戶端</span></div>
+                        <div class="instruction"><i class="fas fa-folder-plus"></i> <span data-en="Add folder for output" data-zh="新增輸出資料夾">新增輸出資料夾</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 26: Step 4 -->
+        <section class="slide" data-slide="26">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 4" data-zh="步驟 4">步驟 4</div>
+                <h2 data-en="Copy Design Link" data-zh="複製設計連結">複製設計連結</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step4.png" alt="Step 4: Copy Link">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-link"></i> <span data-en="Copy the design link from Pixso" data-zh="從 Pixso 複製設計連結">從 Pixso 複製設計連結</span></div>
+                        <div class="instruction"><i class="fas fa-share-alt"></i> <span data-en="Share link contains design data" data-zh="分享連結包含設計資料">分享連結包含設計資料</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 27: Step 5.1 -->
+        <section class="slide" data-slide="27">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 5.1" data-zh="步驟 5.1">步驟 5.1</div>
+                <h2 data-en="Open Claude, Paste Link, Write Prompt" data-zh="開啟 Claude，貼上連結，撰寫提示">開啟 Claude，貼上連結，撰寫提示</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step5-1.png" alt="Step 5.1: Write Prompt">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-paste"></i> <span data-en="Paste design link in Claude" data-zh="在 Claude 中貼上設計連結">在 Claude 中貼上設計連結</span></div>
+                        <div class="instruction"><i class="fas fa-keyboard"></i> <span data-en="Write your prompt" data-zh="撰寫您的提示">撰寫您的提示</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 28: Step 5.2 -->
+        <section class="slide" data-slide="28">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 5.2" data-zh="步驟 5.2">步驟 5.2</div>
+                <h2 data-en="AI Processing" data-zh="AI 處理中">AI 處理中</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step5-2.png" alt="Step 5.2: Processing">
+                    </div>
+                    <div class="step-instructions">
+                        <div class="instruction"><i class="fas fa-spinner"></i> <span data-en="AI analyzes the design" data-zh="AI 分析設計">AI 分析設計</span></div>
+                        <div class="instruction"><i class="fas fa-code"></i> <span data-en="Generates code output" data-zh="生成程式碼輸出">生成程式碼輸出</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 29: Step 6 -->
+        <section class="slide" data-slide="29">
+            <div class="slide-header gradient-header step-header">
+                <div class="step-badge" data-en="Step 6" data-zh="步驟 6">步驟 6</div>
+                <h2 data-en="Result - Code Generated!" data-zh="結果 - 程式碼已生成！">結果 - 程式碼已生成！</h2>
+            </div>
+            <div class="slide-body">
+                <div class="step-content">
+                    <div class="step-image">
+                        <img src="images/step6.png" alt="Step 6: Result">
+                    </div>
+                    <div class="step-instructions success-instructions">
+                        <div class="instruction"><i class="fas fa-check-circle green"></i> <span data-en="Code generated from design" data-zh="從設計生成程式碼">從設計生成程式碼</span></div>
+                        <div class="instruction"><i class="fas fa-file-code green"></i> <span data-en="Ready to use in your project" data-zh="可直接用於您的專案">可直接用於您的專案</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 30: D2C vs C2D Comparison -->
+        <section class="slide" data-slide="30">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-exchange-alt"></i></div>
+                <h2 data-en="D2C vs C2D: What's Possible?" data-zh="D2C vs C2D：哪個可行？">D2C vs C2D：哪個可行？</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style">
+                    <div class="column-header green-header">
+                        <i class="fas fa-check-circle"></i> <span data-en="D2C: Design → Code" data-zh="D2C：設計 → 程式碼">D2C：設計 → 程式碼</span>
+                    </div>
+                    <div class="c2d-mini">
+                        <span class="mini-box design"><i class="fas fa-palette"></i> Pixso</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="mini-box mcp"><i class="fas fa-plug"></i> MCP</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="mini-box code"><i class="fas fa-code"></i> Code</span>
+                    </div>
+                    <div class="status-info success">
+                        <i class="fas fa-check"></i> <span data-en="Pixso MCP supports this" data-zh="Pixso MCP 支援">Pixso MCP 支援</span>
+                    </div>
+                    <div class="status-info success">
+                        <i class="fas fa-infinity"></i> <span data-en="No daily limits (MCP is just a protocol)" data-zh="無每日限制（MCP 只是協議）">無每日限制（MCP 只是協議）</span>
+                    </div>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header orange-header">
+                        <i class="fas fa-times-circle"></i> <span data-en="C2D: Code → Design" data-zh="C2D：程式碼 → 設計">C2D：程式碼 → 設計</span>
+                    </div>
+                    <div class="c2d-mini">
+                        <span class="mini-box code"><i class="fas fa-code"></i> Code</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="mini-box question"><i class="fas fa-question"></i></span>
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="mini-box design"><i class="fas fa-palette"></i> Design</span>
+                    </div>
+                    <div class="status-info warning">
+                        <i class="fas fa-times"></i> <span data-en="Pixso: Not supported" data-zh="Pixso：不支援">Pixso：不支援</span>
+                    </div>
+                    <div class="status-info info">
+                        <i class="fab fa-figma"></i> <span data-en="Figma: Use html.to.design plugin" data-zh="Figma：使用 html.to.design 外掛">Figma：使用 html.to.design 外掛</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 31: Price Comparison Section -->
+        <section class="slide section-divider" data-slide="31">
+            <div class="slide-content title-slide price-gradient">
+                <div class="title-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h1 data-en="Real Price Comparison" data-zh="真實價格比較">真實價格比較</h1>
+                <p class="subtitle" data-en="Pixso vs Figma - True Costs" data-zh="Pixso vs Figma - 實際成本">Pixso vs Figma - 實際成本</p>
+            </div>
+        </section>
+
+        <!-- Slide 32: Design Tools Only -->
+        <section class="slide" data-slide="32">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-palette"></i></div>
+                <h2 data-en="Design Tools Only: Pixso vs Figma" data-zh="僅設計工具：Pixso vs Figma">僅設計工具：Pixso vs Figma</h2>
+            </div>
+            <div class="slide-body">
+                <table class="comparison-table colorful">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-list"></i> <span data-en="Plan" data-zh="方案">方案</span></th>
+                            <th class="pixso-col"><i class="fas fa-circle"></i> Pixso</th>
+                            <th class="figma-col"><i class="fab fa-figma"></i> Figma (Full Seat)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-en="Free (Starter)" data-zh="免費 (Starter)">免費 (Starter)</td>
+                            <td class="winner"><i class="fas fa-infinity"></i> <span data-en="Unlimited files" data-zh="無限檔案">無限檔案</span></td>
+                            <td><i class="fas fa-file"></i> <span data-en="Only 3 files" data-zh="僅 3 個檔案">僅 3 個檔案</span></td>
+                        </tr>
+                        <tr>
+                            <td>Professional</td>
+                            <td class="winner"><i class="fas fa-tag"></i> $4-7/<span data-en="mo" data-zh="月">月</span></td>
+                            <td><i class="fas fa-tag"></i> $16/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                        <tr>
+                            <td>Organization</td>
+                            <td class="winner"><i class="fas fa-building"></i> $15-18/<span data-en="mo" data-zh="月">月</span></td>
+                            <td><i class="fas fa-building"></i> $55/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                        <tr>
+                            <td>Enterprise</td>
+                            <td class="winner"><i class="fas fa-building"></i> $15-18/<span data-en="mo" data-zh="月">月</span></td>
+                            <td><i class="fas fa-building"></i> $90/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                        <tr>
+                            <td data-en="Dev Mode" data-zh="開發模式">開發模式</td>
+                            <td class="winner"><i class="fas fa-gift"></i> <span data-en="FREE" data-zh="免費">免費</span></td>
+                            <td class="loser"><i class="fas fa-plus"></i> $12-35/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                        <tr>
+                            <td data-en="AI (Figma Make)" data-zh="AI (Figma Make)">AI (Figma Make)</td>
+                            <td><i class="fas fa-coins"></i> <span data-en="Credits" data-zh="點數制">點數制</span></td>
+                            <td><i class="fas fa-coins"></i> <span data-en="Credits (3k-4.2k/mo)" data-zh="點數 (3k-4.2k/月)">點數 (3k-4.2k/月)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="price-screenshot">
+                    <p class="screenshot-label"><i class="fab fa-figma"></i> <span data-en="Figma Official Pricing" data-zh="Figma 官方定價">Figma 官方定價</span></p>
+                    <img src="images/prices.jpg" alt="Figma Pricing Screenshot">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 33: With AI Text-to-Design -->
+        <section class="slide" data-slide="33">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-calculator"></i></div>
+                <h2 data-en="With AI Text-to-Design: True Cost" data-zh="含 AI 文字轉設計：實際成本">含 AI 文字轉設計：實際成本</h2>
+            </div>
+            <div class="slide-body">
+                <table class="comparison-table colorful">
+                    <thead>
+                        <tr>
+                            <th><i class="fas fa-shopping-cart"></i> <span data-en="Requirement" data-zh="需求">需求</span></th>
+                            <th class="pixso-col"><i class="fas fa-circle"></i> Pixso <span data-en="Total" data-zh="總計">總計</span></th>
+                            <th class="figma-col"><i class="fab fa-figma"></i> Figma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-en="Design Only" data-zh="僅設計">僅設計</td>
+                            <td class="winner">$4-18/<span data-en="mo" data-zh="月">月</span></td>
+                            <td>$12-45/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                        <tr>
+                            <td>+ AI Gen (5K)</td>
+                            <td class="extra">+ $25/<span data-en="mo" data-zh="月">月</span></td>
+                            <td class="na">N/A</td>
+                        </tr>
+                        <tr>
+                            <td>+ AI Gen (10K)</td>
+                            <td class="extra">+ $45/<span data-en="mo" data-zh="月">月</span></td>
+                            <td class="na">N/A</td>
+                        </tr>
+                        <tr>
+                            <td>+ AI Gen (20K)</td>
+                            <td class="extra">+ $85/<span data-en="mo" data-zh="月">月</span></td>
+                            <td class="na">N/A</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td><strong data-en="Total (Pro + 5K AI)" data-zh="總計（Pro + 5K AI）">總計（Pro + 5K AI）</strong></td>
+                            <td class="warning-cell"><i class="fas fa-exclamation-triangle"></i> $29-43/<span data-en="mo" data-zh="月">月</span></td>
+                            <td>$12-45/<span data-en="mo" data-zh="月">月</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Slide 34: Cost Analysis -->
+        <section class="slide" data-slide="34">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-balance-scale"></i></div>
+                <h2 data-en="Cost Analysis: When is Pixso Cheaper?" data-zh="成本分析：Pixso 何時更便宜？">成本分析：Pixso 何時更便宜？</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style">
+                    <div class="column-header green-header">
+                        <i class="fas fa-thumbs-up"></i> <span data-en="Cheaper than Figma" data-zh="比 Figma 便宜">比 Figma 便宜</span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-check green"></i> <span data-en="Only need design tools" data-zh="只需要設計工具">只需要設計工具</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Value free dev mode (save $25/mo)" data-zh="看重免費開發模式（省 $25/月）">看重免費開發模式（省 $25/月）</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Need offline functionality" data-zh="需要離線功能">需要離線功能</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header orange-header">
+                        <i class="fas fa-equals"></i> <span data-en="Similar or More Expensive" data-zh="相似或更貴">相似或更貴</span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-times orange"></i> <span data-en="Need AI text-to-design" data-zh="需要 AI 文字轉設計">需要 AI 文字轉設計</span></li>
+                        <li><i class="fas fa-calculator orange"></i> Pixso Pro ($7) + AI ($25) = $32/<span data-en="mo" data-zh="月">月</span></li>
+                        <li><i class="fas fa-tag orange"></i> Figma Pro = $15/<span data-en="mo" data-zh="月">月</span> (<span data-en="no AI gen" data-zh="無 AI 生成">無 AI 生成</span>)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conclusion-box">
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="Conclusion: Pixso design tools are cheaper, but AI is extra cost" data-zh="結論：Pixso 設計工具較便宜，但 AI 需額外付費">結論：Pixso 設計工具較便宜，但 AI 需額外付費</span>
+            </div>
+        </section>
+
+        <!-- Slide 35: Feature Comparison -->
+        <section class="slide section-divider" data-slide="35">
+            <div class="slide-content title-slide compare-gradient">
+                <div class="title-icon">
+                    <i class="fas fa-th-list"></i>
+                </div>
+                <h1 data-en="Feature Comparison" data-zh="功能比較">功能比較</h1>
+                <p class="subtitle" data-en="Pixso vs Figma - Full Breakdown" data-zh="Pixso vs Figma - 完整分析">Pixso vs Figma - 完整分析</p>
+            </div>
+        </section>
+
+        <!-- Slide 36: Feature Comparison Table -->
+        <section class="slide" data-slide="36">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-list-check"></i></div>
+                <h2 data-en="Feature Comparison" data-zh="功能比較">功能比較</h2>
+            </div>
+            <div class="slide-body">
+                <table class="comparison-table feature-table colorful">
+                    <thead>
+                        <tr>
+                            <th data-en="Feature" data-zh="功能">功能</th>
+                            <th class="pixso-col">Pixso</th>
+                            <th class="figma-col">Figma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><i class="fas fa-users"></i> <span data-en="Real-time Collaboration" data-zh="即時協作">即時協作</span></td><td class="yes"><i class="fas fa-check"></i></td><td class="yes"><i class="fas fa-check"></i></td></tr>
+                        <tr><td><i class="fas fa-layer-group"></i> <span data-en="Auto-layout" data-zh="自動佈局">自動佈局</span></td><td class="yes"><i class="fas fa-check"></i></td><td class="better"><i class="fas fa-check-double"></i> <span data-en="Better" data-zh="更好">更好</span></td></tr>
+                        <tr><td><i class="fas fa-plane"></i> <span data-en="Offline Mode" data-zh="離線模式">離線模式</span></td><td class="yes"><i class="fas fa-check"></i></td><td class="no"><i class="fas fa-times"></i></td></tr>
+                        <tr><td><i class="fas fa-code"></i> <span data-en="Free Dev Mode" data-zh="免費開發模式">免費開發模式</span></td><td class="yes"><i class="fas fa-check"></i></td><td class="no"><i class="fas fa-times"></i> $25/<span data-en="mo" data-zh="月">月</span></td></tr>
+                        <tr><td><i class="fas fa-magic"></i> <span data-en="AI Text-to-Design" data-zh="AI 文字轉設計">AI 文字轉設計</span></td><td class="warning"><i class="fas fa-dollar-sign"></i> <span data-en="Extra" data-zh="額外">額外</span> $25-85</td><td class="yes"><i class="fas fa-check"></i></td></tr>
+                        <tr><td><i class="fas fa-puzzle-piece"></i> <span data-en="Plugin Ecosystem" data-zh="外掛生態">外掛生態</span></td><td class="limited"><i class="fas fa-minus"></i> <span data-en="Small" data-zh="小">小</span></td><td class="yes"><i class="fas fa-check"></i> <span data-en="Large" data-zh="大">大</span></td></tr>
+                        <tr><td><i class="fas fa-book"></i> <span data-en="Community Resources" data-zh="社群資源">社群資源</span></td><td class="limited"><i class="fas fa-minus"></i> <span data-en="Limited" data-zh="有限">有限</span></td><td class="yes"><i class="fas fa-check"></i> <span data-en="Extensive" data-zh="豐富">豐富</span></td></tr>
+                        <tr><td><i class="fas fa-industry"></i> <span data-en="Industry Standard" data-zh="業界標準">業界標準</span></td><td class="no"><i class="fas fa-times"></i></td><td class="yes"><i class="fas fa-check"></i></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Slide 37: Pros and Cons -->
+        <section class="slide compact-slide" data-slide="37">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-balance-scale-left"></i></div>
+                <h2 data-en="Pixso: Advantages vs Limitations" data-zh="Pixso：優勢與限制">Pixso：優勢與限制</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style pros-card">
+                    <div class="column-header green-header">
+                        <i class="fas fa-plus-circle"></i> <span data-en="Advantages" data-zh="優勢">優勢</span>
+                    </div>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check green"></i> <span data-en="50-70% cheaper (design only)" data-zh="便宜 50-70%（僅設計）">便宜 50-70%（僅設計）</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Free dev mode" data-zh="免費開發模式">免費開發模式</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Offline support" data-zh="離線支援">離線支援</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Unlimited free files" data-zh="無限免費檔案">無限免費檔案</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Private deployment" data-zh="私有部署">私有部署</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="Good Figma import" data-zh="良好的 Figma 匯入">良好的 Figma 匯入</span></li>
+                        <li><i class="fas fa-check green"></i> <span data-en="AI text-to-design (paid)" data-zh="AI 文字轉設計（付費）">AI 文字轉設計（付費）</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style cons-card">
+                    <div class="column-header orange-header">
+                        <i class="fas fa-minus-circle"></i> <span data-en="Limitations" data-zh="限制">限制</span>
+                    </div>
+                    <ul class="cross-list">
+                        <li><i class="fas fa-times orange"></i> <span data-en="AI costs extra $25-85/mo" data-zh="AI 額外 $25-85/月">AI 額外 $25-85/月</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="Smaller community" data-zh="社群較小">社群較小</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="Fewer plugins" data-zh="外掛較少">外掛較少</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="Slower support" data-zh="支援較慢">支援較慢</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="No .fig export" data-zh="無 .fig 匯出">無 .fig 匯出</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="Lower adoption" data-zh="採用率較低">採用率較低</span></li>
+                        <li><i class="fas fa-times orange"></i> <span data-en="Auto-layout less refined" data-zh="自動佈局較不精緻">自動佈局較不精緻</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 38: Recommendations -->
+        <section class="slide" data-slide="38">
+            <div class="slide-header gradient-header">
+                <div class="header-icon"><i class="fas fa-hand-point-right"></i></div>
+                <h2 data-en="Recommendations" data-zh="建議">建議</h2>
+            </div>
+            <div class="slide-body two-column">
+                <div class="column card-style">
+                    <div class="column-header cyan-header">
+                        <i class="fas fa-circle"></i> <span data-en="Use Pixso if:" data-zh="使用 Pixso 如果：">使用 Pixso 如果：</span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-dollar-sign green"></i> <span data-en="Budget is priority" data-zh="預算是優先考量">預算是優先考量</span></li>
+                        <li><i class="fas fa-plane green"></i> <span data-en="Need offline support" data-zh="需要離線支援">需要離線支援</span></li>
+                        <li><i class="fas fa-code green"></i> <span data-en="Want free dev mode" data-zh="想要免費開發模式">想要免費開發模式</span></li>
+                        <li><i class="fas fa-robot green"></i> <span data-en="Don't need AI text-to-design" data-zh="不需要 AI 文字轉設計">不需要 AI 文字轉設計</span></li>
+                        <li><i class="fas fa-puzzle-piece green"></i> <span data-en="OK with smaller ecosystem" data-zh="接受較小的生態系統">接受較小的生態系統</span></li>
+                    </ul>
+                </div>
+                <div class="column card-style">
+                    <div class="column-header purple-header">
+                        <i class="fab fa-figma"></i> <span data-en="Stay with Figma if:" data-zh="繼續使用 Figma 如果：">繼續使用 Figma 如果：</span>
+                    </div>
+                    <ul class="icon-list">
+                        <li><i class="fas fa-puzzle-piece purple"></i> <span data-en="Rely on plugin ecosystem" data-zh="依賴外掛生態系統">依賴外掛生態系統</span></li>
+                        <li><i class="fas fa-share-alt purple"></i> <span data-en="Need external collaboration" data-zh="需要外部協作">需要外部協作</span></li>
+                        <li><i class="fas fa-shield-alt purple"></i> <span data-en="Stability is top priority" data-zh="穩定性是首要考量">穩定性是首要考量</span></li>
+                        <li><i class="fas fa-users purple"></i> <span data-en="Team already knows Figma" data-zh="團隊已熟悉 Figma">團隊已熟悉 Figma</span></li>
+                        <li><i class="fas fa-industry purple"></i> <span data-en="Industry standard matters" data-zh="重視業界標準">重視業界標準</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 39: Thank You -->
+        <section class="slide" data-slide="39">
+            <div class="slide-content title-slide gradient-bg">
+                <div class="title-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1 data-en="Thank You!" data-zh="謝謝！">謝謝！</h1>
+                <p class="subtitle" data-en="Questions?" data-zh="有問題嗎？">有問題嗎？</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-controls">
+        <button class="nav-btn prev" id="prevBtn" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">33</span>
+        </div>
+        <button class="nav-btn next" id="nextBtn" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="keyboard-hint">
+        <i class="fas fa-keyboard"></i> <span data-en="Use arrow keys to navigate | Press F for fullscreen" data-zh="使用方向鍵導航 | 按 F 全螢幕">使用方向鍵導航 | 按 F 全螢幕</span>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <img src="" alt="Fullscreen Image" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
